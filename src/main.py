@@ -34,7 +34,7 @@ N_STATES: int = 4                          # Number of energy levels to render
 X_MIN: float = -6.0                        # Left bound of position axis
 X_MAX: float = 6.0                         # Right bound of position axis
 N_POINTS: int = 2000                       # Spatial resolution
-ASSETS_DIR: str = "assets"                 # Output directory for all saved figures
+ASSETS_DIR: str = "Assets"                 # Output directory for all saved figures
 OUTPUT_STEM: str = "qho_plot"              # Base name; a numeric suffix is appended
 
 # Physical parameters (natural units: ℏ=1, m=1, ω=1)

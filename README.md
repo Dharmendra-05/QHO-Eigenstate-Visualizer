@@ -2,7 +2,7 @@
 ### A Professional-Grade Quantum Mechanics Simulation & Visualization Suite
 
 <p align="center">
-  <img src="assets/qho_plot_00.png" alt="QHO Eigenstates Plot" width="900"/>
+  <img src="Assets/qho_plot_00.png" alt="QHO Eigenstates Plot" width="900"/>
 </p>
 
 <p align="center">
@@ -97,8 +97,8 @@ computational-physics-toolbox/
 │   ├── draw_harmonic_potential()
 │   └── main()
 │
-├── assets/                 # 📁  All saved figures live here
-│   ├── qho_plot_00.png     #     First run
+├── Assets/                 # 📁  All saved figures live here
+│   ├── qho_plot_00.png     #     First run (your renamed file)
 │   ├── qho_plot_01.png     #     Second run (different config)
 │   └── qho_plot_02.png     #     Third run, and so on...
 │
@@ -114,7 +114,7 @@ computational-physics-toolbox/
 
 - **Object-Oriented Physics Engine** — `QuantumHarmonicOscillator` class with full parameter control over mass $m$, angular frequency $\omega$, and $\hbar$.
 - **Dual-Panel Publication Figure** — Side-by-side visualization of wavefunctions $\psi_n(x)$ and probability densities $|\psi_n(x)|^2$, vertically offset by their quantized energy levels.
-- **Sequential Auto-Saving** — Each run automatically produces a new uniquely numbered file (`qho_plot_00.png`, `qho_plot_01.png`, …) inside the `assets/` directory. No run ever overwrites a previous result.
+- **Sequential Auto-Saving** — Each run automatically produces a new uniquely numbered file (`qho_plot_00.png`, `qho_plot_01.png`, …) inside the `Assets/` directory. No run ever overwrites a previous result.
 - **Classical Turning Points** — Automatically computed and annotated on the probability density panel, making quantum tunneling immediately visible.
 - **LaTeX Math Rendering** — All axis labels, titles, and annotations use Matplotlib's Computer Modern math font for a genuine journal-quality aesthetic.
 - **Perceptual Colormap** — Uses the `plasma` colormap, which is perceptually uniform and remains distinguishable in greyscale (for print).
@@ -126,11 +126,11 @@ computational-physics-toolbox/
 
 ## 📊 Output
 
-All figures are saved automatically to the `assets/` directory with sequential, zero-padded filenames. Each run of `python main.py` appends a new file — no previous output is ever overwritten.
+All figures are saved automatically to the `Assets/` directory with sequential, zero-padded filenames. Each run of `python main.py` appends a new file — no previous output is ever overwritten.
 
 ```
-assets/
-├── qho_plot_00.png    ← n=0..3, plasma colormap (default)
+Assets/
+├── qho_plot_00.png    ← first run (default settings)
 ├── qho_plot_01.png    ← n=0..5, viridis colormap
 └── qho_plot_02.png    ← n=0..3, ω=0.5 (wider well)
 ```
@@ -182,17 +182,17 @@ python main.py
 
 On success, you will see the path of the newly created file:
 ```
-[✓] Figure saved → 'assets/qho_plot_00.png' (300 dpi)
+[✓] Figure saved → 'Assets/qho_plot_01.png' (300 dpi)
 ```
 
 Run it again (e.g., after changing `N_STATES` or `OMEGA`) and it auto-increments:
 ```
-[✓] Figure saved → 'assets/qho_plot_01.png' (300 dpi)
+[✓] Figure saved → 'Assets/qho_plot_02.png' (300 dpi)
 ```
 
 Open the output in WSL:
 ```bash
-explorer.exe assets/qho_plot_00.png
+explorer.exe Assets/qho_plot_01.png
 ```
 
 ---
@@ -271,7 +271,7 @@ N_STATES: int = 4               # Number of energy levels to render
 X_MIN: float = -6.0             # Left bound of position axis
 X_MAX: float = 6.0              # Right bound of position axis
 N_POINTS: int = 2000            # Spatial resolution (increase for smoother curves)
-ASSETS_DIR: str = "assets"      # Output directory — created automatically if absent
+ASSETS_DIR: str = "Assets"      # Output directory — created automatically if absent
 OUTPUT_STEM: str = "qho_plot"   # Base filename; a _NN suffix is appended each run
 
 MASS: float = 1.0               # Particle mass (natural units)
