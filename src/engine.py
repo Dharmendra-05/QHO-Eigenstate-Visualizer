@@ -165,7 +165,10 @@ class QuantumHarmonicOscillator:
 
         At x_tp, the total energy equals the potential energy V(x_tp) = E_n,
         leaving zero kinetic energy — a particle here would stop and reverse
-        classically. Quantum mechanically, tunneling allows |ψ_n|² to be
+        classically. Quantum mechanically, The exponential tail extends past x_tp because a bound state in a potential
+well is not compactly supported. This is the boundary between classically
+allowed and classically forbidden motion, not tunnelling: there is no
+barrier and no second allowed region. It allows |psi_n|^2 tobe
         non-zero beyond this point.
 
         Args:

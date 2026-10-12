@@ -72,7 +72,10 @@ $$\boxed{E_n = \left(n + \frac{1}{2}\right)\hbar\omega, \quad n = 0, 1, 2, \ldot
 
 The $\frac{1}{2}\hbar\omega$ **zero-point energy** at $n=0$ is a profound consequence of the **Heisenberg Uncertainty Principle** — the particle can never be at rest, even at absolute zero temperature. Classically, the particle would be stationary at the potential minimum. Quantum mechanically, it fluctuates forever.
 
-The **classical turning points** $x_{tp} = \sqrt{2E_n / m\omega^2}$, where $E_n = V(x_{tp})$, are marked on the probability density plot. The non-zero value of $|\psi_n|^2$ beyond these points is a direct visualization of **quantum tunneling**.
+The **classical turning points** $x_{tp} = \sqrt{2E_n / m\omega^2}$, where $E_n = V(x_{tp})$, are marked on the probability density plot. The density is non-zero beyond these points because $E_n < V(x)$ there: it is the
+evanescent tail of the bound state, marking the boundary between classically allowed
+and classically forbidden motion. **This is not quantum tunnelling** — there is no
+barrier and no second allowed region.
 
 ---
 
@@ -115,7 +118,7 @@ computational-physics-toolbox/
 - **Object-Oriented Physics Engine** — `QuantumHarmonicOscillator` class with full parameter control over mass $m$, angular frequency $\omega$, and $\hbar$.
 - **Dual-Panel Publication Figure** — Side-by-side visualization of wavefunctions $\psi_n(x)$ and probability densities $|\psi_n(x)|^2$, vertically offset by their quantized energy levels.
 - **Sequential Auto-Saving** — Each run automatically produces a new uniquely numbered file (`qho_plot_00.png`, `qho_plot_01.png`, …) inside the `Assets/` directory. No run ever overwrites a previous result.
-- **Classical Turning Points** — Automatically computed and annotated on the probability density panel, making quantum tunneling immediately visible.
+- **Classical Turning Points** — Automatically computed and annotated on the probability density panel, making the classically forbidden region immediately visible.
 - **LaTeX Math Rendering** — All axis labels, titles, and annotations use Matplotlib's Computer Modern math font for a genuine journal-quality aesthetic.
 - **Perceptual Colormap** — Uses the `plasma` colormap, which is perceptually uniform and remains distinguishable in greyscale (for print).
 - **Headless / WSL Compatible** — Uses `plt.savefig` exclusively; no GUI window is required.
