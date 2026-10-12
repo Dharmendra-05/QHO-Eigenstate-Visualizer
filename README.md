@@ -1,6 +1,13 @@
 # ⚛️ QHO Eigenstate Visualizer
 ### A Professional-Grade Quantum Mechanics Simulation & Visualization Suite
 
+> [!IMPORTANT]
+> **Repository Archived & Integrated into [Quantum-CLI](https://github.com/Dharmendra-05/Quantum-CLI)**  
+> This visualizer suite has been merged into the unified **[Quantum-CLI](https://github.com/Dharmendra-05/Quantum-CLI)** project.  
+> All active development, enhanced precision algorithms, and multi-state visualization commands continue in the main CLI repository.  
+> 
+> *The full commit history of this repository has been permanently preserved in the `legacy/qho-visualizer` branch of Quantum-CLI.*
+
 <p align="center">
   <img src="Assets/qho_plot_00.png" alt="QHO Eigenstates Plot" width="900"/>
 </p>
