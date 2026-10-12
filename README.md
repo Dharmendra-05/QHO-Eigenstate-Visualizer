@@ -1,4 +1,4 @@
-# ⚛️ Computational Physics Toolbox
+# ⚛️ QHO Eigenstate Visualizer
 ### A Professional-Grade Quantum Mechanics Simulation & Visualization Suite
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 ## 🔭 Overview
 
-The **Computational Physics Toolbox** is a modular, object-oriented Python suite for simulating and visualizing quantum mechanical systems to a publication-ready standard. The first module in this toolbox is a full solver and visualizer for the **1D Quantum Harmonic Oscillator (QHO)** — one of the most fundamental and exactly solvable problems in all of quantum mechanics.
+The **QHO Eigenstate Visualizer** is a modular, object-oriented Python suite for simulating and visualizing the **1D Quantum Harmonic Oscillator (QHO)** eigenstates and probability densities to a publication-ready standard. One of the most fundamental and exactly solvable problems in all of quantum mechanics.
 
 This project was built with professional software engineering principles at its core: a clean separation between the physics engine and the visualization layer, strict type hinting, Google-style docstrings, and parameterized physical constants throughout.
 
@@ -84,7 +84,7 @@ barrier and no second allowed region.
 The project strictly separates **physics computation** from **visualization**, ensuring each module is independently testable and reusable.
 
 ```
-computational-physics-toolbox/
+QHO-Eigenstate-Visualizer/
 │
 ├── engine.py               # ⚙️  Pure physics backend — zero plotting imports
 │   └── QuantumHarmonicOscillator (class)
@@ -300,7 +300,7 @@ CMAP_NAME: str = "plasma"       # Any valid Matplotlib colormap name
 
 ## 🗺️ Roadmap
 
-This toolbox is designed to grow. Planned modules follow the same `engine.py` / `main.py` architecture:
+This visualizer is designed to grow. Planned modules follow the same `engine.py` / `main.py` architecture:
 
 - [ ] **Finite Potential Well** — Numerically solved bound states and transmission coefficients
 - [ ] **Particle in a Box** (1D & 2D) — Infinite square well eigenstates
